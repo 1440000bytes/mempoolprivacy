@@ -14,7 +14,7 @@ Request:
 
 ```http
 GET /mempool?node=1 HTTP/1.1
-Host: spkreuse.fun
+Host: api.spkreuse.fun
 Content-Type: application/json
 ```
 Response:
