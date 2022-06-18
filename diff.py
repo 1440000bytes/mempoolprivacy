@@ -6,7 +6,7 @@ from jsondiff import diff
 
 def get_mempool(node):
 
-    url = "https://spkreuse.fun/mempool?node=" + node
+    url = "https://api.spkreuse.fun/mempool?node=" + node
 
     payload={}
     headers = {
