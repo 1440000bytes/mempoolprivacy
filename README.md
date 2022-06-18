@@ -3,10 +3,9 @@
 ![image](https://user-images.githubusercontent.com/94559964/174421798-46463c84-59f3-4984-acdc-57ae092f3953.png)
 
 
-
 ### Usage
 
-There are 2 nodes running and GET request will return results for `getrawmempool` for these nodes. Node 2 has `spekreuse=conflict` saved _bitcoin_rw.conf_ file.
+There are 2 nodes running and GET request will return results of `getrawmempool` for these nodes. Node 2 has `spekreuse=conflict` saved in _bitcoin_rw.conf_ file.
 
 Chain: Signet  
 Implementation: Bitcoin Knots
@@ -46,7 +45,7 @@ Response:
 
 To run the API locally change credentials in [api.py](https://github.com/1440000bytes/mempoolprivacy/blob/main/api.py) and run it using flask (python)
 
-Mempool transactions for two nodes will be differemt when node 2 does not allow transactions with address reuse. JSON output can be used to create tables, highlight difference etc. Example python script to get the difference between mempool of 2 nodes [diff.py](https://github.com/1440000bytes/mempoolprivacy/blob/main/diff.py) will return [diff](https://github.com/xlwings/jsondiff) for 2 JSON:
+Mempool transactions for two nodes can be different because node 2 does not allow transactions with address reuse. JSON output can be used to create tables, highlight difference etc. Example python script to get the difference between mempool of 2 nodes [diff.py](https://github.com/1440000bytes/mempoolprivacy/blob/main/diff.py) will return [diff](https://github.com/xlwings/jsondiff) for 2 JSON:
 
 ```
 {insert: [(5, 'fee0cc08b1fbd051ad0170bccc1028f3a964c9734a55e4a2ea626bb71222de6a')]}
